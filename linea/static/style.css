@@ -1,0 +1,273 @@
+/* Variables de color */
+:root { 
+    --white: #ffffff;
+    --pink: #052659;
+    --morado: #7da0ca;
+    --azul: #5483b3; 
+    --black: #021024;
+    --amarillo:#c1e8ff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+  }
+  /* Estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fuenteencabezado';
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+  /* Header principal */
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Sombra agregada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  /* Logo y título */
+.logo-section {
+    display: flex;
+    flex-direction: column;    
+    width: 100%; /* Ocupa todo el ancho */
+    justify-content: space-between; /* Espaciado entre logo y los íconos interactivos */
+    
+  }
+  
+  .logo-section-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;                  /* Ancho del logo */
+    height: auto; 
+  }
+  
+  .logo-section h1 {
+    font-size: 24px;
+    font-family: 'fuenteencabezado';
+    margin-left: 10px;
+    color:var(--pink); 
+  }
+  /* Contenedor principal de los íconos y la barra de búsqueda */
+.icons {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    gap: 15px;
+    justify-content: end;
+  }
+  .icons i {
+    font-size: 1.2rem; /* Tamaño de los íconos */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--pink);
+  }
+  .icon:hover{
+    transform: scale(1.4);
+  }
+  .icon i:hover {
+    color: var(--azul);
+  }
+  
+  /* Contenedor de la caja de búsqueda */
+  .search-box {
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #f7f7f7; /* Fondo claro */
+    border: none; /* Sin borde visible */
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 10px 28px; /* Espaciado interno */
+    width: 500px; /* Ancho de la barra de búsqueda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Campo de entrada */
+  .search-box input {
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno al seleccionar */
+    background: transparent; /* Fondo transparente */
+    font-size: 0.8rem; /* Tamaño del texto */
+    color: #434343; /* Color del texto */
+    flex: 1; /* Ocupa el espacio restante */
+    font-family: "fuentetexto";
+  }
+  
+  /* Placeholder personalizado */
+  .search-box input::placeholder {
+    color: #8f8f8f; /* Color del placeholder */
+    font-style: italic; /* Estilo del texto */
+  }
+  
+  /* Ícono de búsqueda */
+  .search-box .search-btn {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: #333; /* Color del ícono */
+    font-size: 1.2rem; /* Tamaño del ícono */
+    font-family: "fuentetexto";
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Menú de navegación */
+  .navbar {
+    text-align: start; /* Centra el menú horizontalmente */
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .navbar ul {
+    display: inline-flex; /* Muestra los ítems horizontalmente */
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color:var(--black);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .navbar a:hover {
+    color:var(--amarillo);
+  }
+  /* Imagen de fondo */
+.hogar {  
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    background: url(/static/images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    animation: zoomIn 10s infinite alternate; /* Agrega la animación */
+}
+
+/* Definición de la animación de zoom */
+@keyframes zoomIn {
+    0% {
+        background-size: 100%; /* Imagen en su tamaño original */
+    }
+    50% {
+        background-size: 110%; /* Zoom del 10% */
+    }
+    100% {
+        background-size: 100%; /* Regresa al tamaño original */
+    }
+}
+
+/* Contenido del hogar */
+.hogar .content {
+    max-width: 50rem;
+    margin-top: 4rem;
+}
+
+.hogar .content h3 { 
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);   
+    font-weight: bolder;
+    color: var(--azul);
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 20px;
+    
+}
+
+.hogar .content span {
+    font-size: 2.8rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+.hogar .content p {
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 1;
+    margin-left: 30px;
+
+}
+.ver-todo-link {
+    text-align: left;
+    margin: 1rem 0;
+    font-family: "fuentecuerpo";
+    color: var(--morado);
+}
+.ver-todo-link:hover{
+    color: var(--pink);
+    transform: scale(2);
+}
+/* Botón comprar */
+.btn {  
+    background-color: var(--azul);
+    display: inline-block;
+    margin-top: 6rem; 
+    border-radius: 4rem;
+    color: var(--white);
+    padding: .8rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    
+}
+
+.btn:hover {
+    background: var(--pink);
+    color: var(--white);
+    transition: 0.3s ease;
+   
+}
+/* Animación de zoom */
+@keyframes zoom-background {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+/* Footer */
+footer {
+    background-color:var(--azul); /* Color de fondo azul del footer */
+    padding: 50px 0;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del footer */
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px; /* Espacio entre las secciones */
+    width: 90%; /* Asegura que ocupe el 90% del ancho */
+    max-width: 1200px; /* Limita el ancho máximo */
+    text-align: center;
+}

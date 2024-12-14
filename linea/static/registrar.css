@@ -1,0 +1,233 @@
+/* Variables de color */
+:root { 
+    --white: #ffffff;
+    --pink: #052659;
+    --morado: #7da0ca;
+    --azul: #5483b3; 
+    --black: #021024;
+    --amarillo:#3278a1;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+  }
+/* Título de inicio */
+.titulo {
+    margin: 50px auto;
+    text-align: center;
+    color: var(--black);
+    font-size: 1.9rem;
+    font-family: "fuentecuerpo";
+}
+
+/* Contenedor principal de login */
+.login-container {
+    max-width: 900px; /* Ajusta el ancho */
+    margin: 50px auto; /* Centra el contenedor */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center; /* Centra el contenido */
+    font-family: "fuentecuerpo";
+    margin-top: -40px;
+}
+
+/* Título de inicio */
+.titulo {
+    margin: 50px auto;
+    text-align: center;
+    color: var(--black);
+    font-size: 1.9rem;
+    font-family: "fuentecuerpo";
+}
+
+/* Contenedor principal de login */
+.login-container {
+    max-width: 900px; /* Ajusta el ancho */
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center; /* Centra el contenido */
+    font-family: "fuentecuerpo";
+    margin-top: -40px;
+
+    
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%; /* Ancho completo */
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--black);
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.span{
+    color: var(--black);
+}
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%; 
+    height: 44px; 
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #E8E8E8;
+    justify-content: center;
+}
+
+/* Opciones del formulario */
+/* Opciones del formulario */
+.form-options {
+    display: flex; /* Disposición horizontal */
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    
+}
+
+.form-options  {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center; /* Centra el texto */
+}
+.form-options a{
+    font-family:"fuentecuerpo";
+    text-align: left; 
+}
+
+.form-options a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+    
+}
+
+/* Botón */
+.btn {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%; 
+    height: 44px; 
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:var(--pink);
+    justify-content: center;
+    margin: 10px auto 0
+}
+
+.btn:hover {
+    background-color: var(--azul);
+}
+
+/* Nuevo usuario */
+.new-account {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center; /* Centra el texto */
+}
+
+.new-account a {
+    color: var(--pink);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-account a:hover {
+    text-decoration: underline;
+}
+
+/* Separador de redes sociales */
+.social-login {
+    margin-top: 20px;
+
+}
+
+.social-login div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.social-login div::before,
+.social-login div::after {
+    flex: 1;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.social-login div span {
+    margin: 0 10px;
+    color: var(--black);
+}
+
+/* Botones de login */
+.login-boton {
+    background-color: var(--azul);
+    color: #fff;
+    border: none;
+    padding: 10px 256px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Asegura que el botón ocupe todo el ancho posible */
+    margin: 10px auto 0; /* Acentúa la centrado verticalmente y horizontalmente */
+    box-shadow: var(--box-shadow);
+    font-family: "fuentetexto";
+    font-size: 1rem;
+}
+
+.login-boton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.login-boton a i {
+    font-size: 1.2rem;
+    margin-right: 8px; /* Ajusta el margen para mantener el icono alineado */
+}
+
+.login-boton:hover {
+    background-color: var(--azul);
+    color: var(--white);
+}
+.contrato{
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.continuar{
+    font-size: 0.8rem;
+
+}
+.politicas{
+    font-size: 0.8rem;
+    color: #130f40;
+}
+.politicas :hover{
+    text-decoration: underline;
+    color: #6404A5;
+
+}
+

@@ -1,0 +1,38 @@
+/* Encabezado */
+@font-face {
+    font-family: 'fuenteencabezado';
+    src: url('/static/font/Kanit-SemiBold.ttf'); /* Se omite el formato, ya que los navegadores detectan el tipo automáticamente */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Cuerpo de la fuente */
+@font-face {
+    font-family: 'fuentecuerpo';
+    src: url('/static/font/Kanit-SemiBoldItalic.ttf'); /* Se omite el formato */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Texto común, párrafo */
+@font-face {
+    font-family: 'fuentetexto';
+    src: url('/static/font/Kanit-Thin.ttf'); /* Asegúrate de que la ruta sea correcta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplicar fuente al encabezado */
+body{
+    font-family: 'fuenteencabezado';
+}
+
+/* Cuerpo de la página */
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'fuentecuerpo';
+}
+
+/* Texto común (párrafos, span, lista) */
+p, span, li { 
+    font-family: 'fuentetexto';
+}

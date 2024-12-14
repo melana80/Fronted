@@ -1,0 +1,89 @@
+/* Variables de color */
+:root { 
+    --white: #ffffff;
+    --pink: #052659;
+    --morado: #7da0ca;
+    --azul: #5483b3; 
+    --black: #021024;
+    --amarillo:#c1e8ff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+  }
+.contact-section {
+    padding: 40px 20px;
+    margin-top: 20px; /* Aquí se añade el margen superior */
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: none;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #000000;
+    font-family: "fuentecuerpo";
+    text-align: center;
+}
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    font-family: "fuentetexto";
+    text-align: center;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "fuentetexto";
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #E8E8E8;
+}
+
+.contact-container input {
+    border-radius: 1px;
+    border-color: #333;
+}
+
+.contact-container textarea {
+    border-radius: 1px;
+    border-color: #333;
+}
+
+.contact-container button {
+    background-color: var(--pink);
+    color: #fff;
+    border: none;
+    padding: 10px 256px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block; /* Asegura que el botón ocupe todo el ancho posible */
+    margin: 10px auto 0; /* Acentúa la centrado verticalmente y horizontalmente */
+    box-shadow: var(--box-shadow);
+    font-family: "fuentetexto";
+    font-size: 1rem;
+}
+
+.contact-container button:hover {
+    background-color: var(--morado);
+    box-shadow: var(--outline-hover);
+}

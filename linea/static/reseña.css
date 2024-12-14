@@ -1,0 +1,169 @@
+/* Variables de color */
+:root { 
+    --white: #ffffff;
+    --pink: #052659;
+    --morado: #7da0ca;
+    --azul: #5483b3; 
+    --black: #021024;
+    --amarillo:#c1e8ff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .reviews-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s ease-in-out 0.2s;
+  }
+  
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .review-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 2rem; /* Espaciado superior */
+    margin-bottom: 0.5rem; /* Ajuste para evitar que el texto quede muy cerca del cuerpo del review */
+    font-family: "fuenteencabezado";
+  }
+  
+  .review-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .review-images {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .review-images img {
+    width: 48%;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stars {
+    font-size: 1.2rem;
+    color: #ffc107;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+  }
+
+/* Estilos para el enlace del botón */
+.view-all-link {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Botón ya existente */
+.view-all-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: "fuentetexto";
+  color: white;
+  background-color:var(--morado);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+
+}
+
+.view-all-btn:hover {
+  background-color: var(--amarillo);
+  transform: scale(1.05);
+}
+  
+  /* Animaciones */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

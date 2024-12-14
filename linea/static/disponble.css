@@ -1,0 +1,133 @@
+/* Variables de color */
+:root { 
+    --white: #ffffff;
+    --pink: #052659;
+    --morado: #7da0ca;
+    --azul: #5483b3; 
+    --black: #021024;
+    --amarillo:#c1e8ff;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+  }
+.subtitulo {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: "fuentetexto";
+}
+.ver-todo-link{
+    text-decoration: none;
+}
+.ver-todo-link:hover{
+    color: var(--pink);
+    transform: scale(2);
+}
+
+
+/* Contenedor de productos */
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Estilo para el título */
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+    margin: 25px 0;
+    font-family: 'fuentecuerpo';
+    margin-top: 80px;
+}
+
+/* Estilo de cada producto */
+.producto {
+    text-align: center;
+    background-color: var(--white);;
+    border-radius: 8px;
+    padding: 8px;
+    max-width: 300px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+.imagen {
+    text-align: center;
+    margin: 10px 0;
+}
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+/* Botón de carrito */
+.button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: var(--azul);
+    background: transparent;
+}
+/* Contenedor de botones */
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+/* Botón de carrito */
+.carrito-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: var(--azul);
+    background: transparent;
+}
+
+.carrito-btn:hover {
+    color: var(--black); 
+    transform: scale(1.1);
+}
+
+/* Botón de lista de deseos */
+.wishlist-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: var(--pink);
+    background: transparent;
+}
+
+.wishlist-btn:hover {
+    color: #ff1a1a; /* Rosa más intenso */
+    transform: scale(1.1);
+}
+
+/* Iconos en los botones */
+.carrito-btn i, .wishlist-btn i {
+    font-size: 1.2rem;
+}
+
